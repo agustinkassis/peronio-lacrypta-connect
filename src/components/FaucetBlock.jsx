@@ -3,7 +3,7 @@ import { Button } from "../components/Button";
 import { AddToken } from "./AddToken";
 
 import Claimer from "./widgets/Claimer";
-import usdcImage from "../static/usdc.png";
+// import usdcImage from "../static/usdc.png";
 import peImage from "../static/pe.png";
 
 export const FaucetBlock = ({ address }) => {

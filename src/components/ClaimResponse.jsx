@@ -15,7 +15,7 @@ const ClaimResponse = (props) => {
   return (
     <Container>
       <div>
-        {props.response.status == 200 ? (
+        {props.response.status === 200 ? (
           <div>
             <div>
               <h3>Bienvenido compañero!</h3>
@@ -27,7 +27,7 @@ const ClaimResponse = (props) => {
             <div>
               <h3>Hubo un error</h3>
             </div>
-            <div>{props.message}</div>
+            <div>{props.response.message}</div>
             <Log>
               <div>
                 <h4>Log</h4>
