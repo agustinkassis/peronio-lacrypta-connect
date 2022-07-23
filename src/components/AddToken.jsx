@@ -40,10 +40,10 @@ export const AddToken = ({ address, symbol, decimals, image, onAdded }) => {
           buttonSize='btn--large'
           onClick={handleAddToken}
         >
-          Agregar {symbol} a Metamask
+          Agregar {symbol} a la wallet
         </Button>
       ) : (
-        <div>Token ({symbol}) agregado a Metamask!</div>
+        <div>Token ({symbol}) agregado a la Wallet!</div>
       )}
     </>
   );
