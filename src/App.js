@@ -45,16 +45,14 @@ export default function App() {
       {ethereum && (
         //<a href="https://metamask.online/" target="_blank">
         <>
-          <h3>Tenes Metamask instalado!</h3>
+          <h3>Tenes Alpha Wallet instalado!</h3>
           <div>
-            <p>
-              Tu billetera vive en el explorador, podes acceder a ella desde el
-              ícono arriba a la derecha
-            </p>
             {!addr ? (
-              <p>Hacé click en Conectar a Metamask</p>
+              <p>
+                Hacé click en <b>Conectar a billetera</b>
+              </p>
             ) : (
-              "Ya estas conectado!"
+              ""
             )}
           </div>
 
@@ -65,7 +63,7 @@ export default function App() {
               buttonSize='btn--large'
               onClick={handleGetAcount}
             >
-              Conectar a Metamask
+              Conectar a Billetera
             </Button>
           ) : (
             <OnBoarding addr={addr} chainId={chainId} />

@@ -7,8 +7,6 @@ const requiredNetwork = 137; //Polygon
 export const OnBoarding = ({ addr, chainId }) => {
   return (
     <div>
-      <p>Tu direccion: {addr}</p>
-
       <div>
         {chainId === requiredNetwork ? (
           <FaucetBlock address={addr} />

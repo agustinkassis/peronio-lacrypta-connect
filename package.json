@@ -1,25 +1,30 @@
 {
-  "name": "peronio-intro",
+  "name": "lacrypta-peronio-connect",
   "version": "1.0.0",
   "description": "",
   "keywords": [],
   "main": "src/index.js",
   "dependencies": {
-    "netlify-lambda": "^2.0.15",
+    "@ethereumjs/common": "3.0.0-beta.2",
+    "@ethereumjs/tx": "4.0.0-beta.2",
+    "@ethereumjs/util": "8.0.0-beta.2",
+    "@netlify/functions": "^1.0.0",
+    "axios": "^0.27.2",
+    "firebase-admin": "^10.0.0",
     "react": "16.12.0",
     "react-dom": "16.12.0",
     "react-router": "5.2.0",
     "react-router-dom": "5.2.0",
     "react-scripts": "3.0.1",
-    "styled-components": "5.1.1"
+    "styled-components": "5.1.1",
+    "web3": "1.6.1"
   },
   "scripts": {
     "start": "react-scripts start",
     "dev": "netlify dev",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject",
-    "postinstall": "cd functions/claim && yarn install"
+    "eject": "react-scripts eject"
   },
   "browserslist": [
     ">0.2%",
@@ -28,6 +33,7 @@
     "not op_mini all"
   ],
   "devDependencies": {
+    "electron": "^19.0.9",
     "netlify-cli": "^8.0.12"
   }
 }
