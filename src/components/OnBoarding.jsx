@@ -8,7 +8,7 @@ export const OnBoarding = ({ addr, chainId }) => {
   return (
     <div>
       <div>
-        {chainId === requiredNetwork ? (
+        {[parseInt(requiredNetwork), 311].indexOf(parseInt(chainId)) !== -1 ? (
           <FaucetBlock address={addr} />
         ) : (
           <>
